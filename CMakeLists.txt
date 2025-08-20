@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Name of the Projects
-project(tcpserver)
+project(HTTP_SERVER_1_0V)
 
 # What version of C++ is required to run the projects
 set(CMAKE_CXX_STANDARD 14)
@@ -11,17 +11,20 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # we define some flags with detect the system and set the flag accordinly
 
 if(WIN32)
-    set(SERVER_OS_SRC win/win.cpp)
+    set(PLATFORM_NAME "windows")
+    add_definitions(-DPLATFORM_WINDOWS)
 elseif(UNIX AND NOT APPLE)
-    set(SERVER_OS_SRC lin/lin.cpp)
+    set(PLATFORM_NAME "linux")
+    add_definitions(-DPLATFORM_LINUX)
 elseif(APPLE)
-    set(SERVER_OS_SRC mac/mac.cpp)
+    set(PLATFORM_NAME "mac")
+    add_definitions(-DPLATFORM_MAC)
 endif()
 
-# add library
-add_library(tcpserver STATIC tcpserver.cpp ${SERVER_OS_SRC})
-
-target_include_directories(tcpserver PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+add_subdirectory(tcpserver)
+add_subdirectory(tcpclient)
+add_subdirectory(httpserver)
+add_subdirectory(examples)
 
 
 
