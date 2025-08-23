@@ -1,9 +1,0 @@
-C:/Users/Dell/Desktop/HTTP-SERVER/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/tcpserver/CMakeFiles/tcpserver.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/tcpserver/CMakeFiles/ALL_BUILD.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/tcpclient/CMakeFiles/tcpclient.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/tcpclient/CMakeFiles/ALL_BUILD.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/examples/CMakeFiles/server.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/examples/CMakeFiles/client.dir
-C:/Users/Dell/Desktop/HTTP-SERVER/build/examples/CMakeFiles/ALL_BUILD.dir

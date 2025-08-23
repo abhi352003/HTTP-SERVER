@@ -24,4 +24,8 @@ private:
     WSADATA wsaData;
 };
 
+<<<<<<< HEAD
 #endif 
+=======
+#endif
+>>>>>>> 6b9f5c30c30e3216c705669f58b91ab5b49477d5

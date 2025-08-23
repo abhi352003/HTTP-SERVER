@@ -148,6 +148,7 @@ void LinServer::handleSend(int client_fd)
         return;
 
     std::string &msg = it->second;
+    
     ssize_t bytesSent = send(client_fd, msg.c_str(), msg.size(), 0);
 
     if (bytesSent > 0)

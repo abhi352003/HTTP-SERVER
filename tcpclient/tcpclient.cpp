@@ -19,4 +19,8 @@ TCPClient *createClient()
 #else
     return nullptr; // In case no platform is defined
 #endif
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6b9f5c30c30e3216c705669f58b91ab5b49477d5
