@@ -1,10 +1,19 @@
-#include "../tcpserver/win/win.h"   // adjust depending on OS
+#include "tcpserver.h"
+#include <iostream>
+#include <string>
 
 int main() {
-    WinServer server;  // Or LinServer / MacServer
-    if (!server.initialize(8080, "127.0.0.1")) {
+    // Create server instance using factory
+    TCPServer* server = createserver();
+
+    if (!server->initialize(8080, "127.0.0.1")) {
+        std::cerr << "Server initialization failed!" << std::endl;
         return -1;
     }
-    server.start();
+
+    std::cout << "Server started on 127.0.0.1:8080" << std::endl;
+    server->start();
+
+    delete server;
     return 0;
 }
