@@ -26,5 +26,13 @@ add_subdirectory(tcpclient)
 add_subdirectory(httpserver)
 add_subdirectory(examples)
 
+# mkdir build
+# cd build
+# cmake ..
+# cmake --build .
+# cd examples/Debug/server.exe
+# cd examples/Debug/client.exe
+
+
 
 

@@ -11,17 +11,23 @@
 
 ## Table of Contents
 
-- [Goals & Non-Goals](#goals--non-goals)
-- [Architecture Overview](#architecture-overview)
-- [Folder Structure](#folder-structure)
-- [Build & Run](#build--run)
-- [Core Concepts](#core-concepts)
-  - [1) TCP Server Layer](#1-tcp-server-layer)
-  - [2) HTTP Protocol Layer](#2-http-protocol-layer)
-  - [3) Connection Lifecycle & Backpressure](#3-connection-lifecycle--backpressure)
-  - [4) Threading Models](#4-threading-models)
-  - [5) Error Handling & Timeouts](#5-error-handling--timeouts)
-- [Performance & 10K+ Concurrency](#performance--10k-concurrency)
+- [High-Performance HTTP Server on a Custom TCP Layer](#high-performance-http-server-on-a-custom-tcp-layer)
+  - [Table of Contents](#table-of-contents)
+  - [Goals \& Non-Goals](#goals--non-goals)
+  - [Architecture Overview](#architecture-overview)
+  - [Folder Structure](#folder-structure)
+  - [Build \& Run](#build--run)
+    - [Prerequisites](#prerequisites)
+    - [Linux](#linux)
+    - [Try it](#try-it)
+  - [Core Concepts](#core-concepts)
+    - [1) TCP Server Layer](#1-tcp-server-layer)
+    - [2) HTTP Protocol Layer](#2-http-protocol-layer)
+    - [3) Connection Lifecycle \& Backpressure](#3-connection-lifecycle--backpressure)
+    - [4) Threading Models](#4-threading-models)
+    - [5) Error Handling \& Timeouts](#5-error-handling--timeouts)
+  - [Performance \& 10K+ Concurrency](#performance--10k-concurrency)
+  - [Appendix: Code Snippets](#appendix-code-snippets)
 
 ---
 
@@ -112,8 +118,8 @@ project-root/
 ### Linux
 ```bash
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-cmake --build . -j
+cmake  ..
+cmake --build . 
 ./examples/server
 ```
 

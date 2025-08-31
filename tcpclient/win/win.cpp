@@ -50,8 +50,5 @@ void WinClient::disconnect() {
         sockfd = INVALID_SOCKET;
         std::cout << "Disconnected from server\n";
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 6b9f5c30c30e3216c705669f58b91ab5b49477d5

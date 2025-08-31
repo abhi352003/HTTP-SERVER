@@ -6,7 +6,7 @@ int main() {
     // Create server instance using factory
     TCPServer* server = createserver();
 
-    if (!server->initialize(8080, "127.0.0.1")) {
+    if (!server->initialize(8018, "127.0.0.1")) {
         std::cerr << "Server initialization failed!" << std::endl;
         return -1;
     }

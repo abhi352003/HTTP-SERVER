@@ -19,8 +19,4 @@ private:
     int sockfd;
 };
 
-<<<<<<< HEAD
 #endif // MAC_CLIENT_H
-=======
-#endif // MAC_CLIENT_H
->>>>>>> 6b9f5c30c30e3216c705669f58b91ab5b49477d5
